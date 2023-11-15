@@ -1,0 +1,6 @@
+{
+    "servidor": "mi_servidor.com",
+    "puerto": 8080,
+    "usuario": "mi_usuario",
+    "contrasena": "mi_pass"
+  }
