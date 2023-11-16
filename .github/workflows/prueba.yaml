@@ -11,7 +11,12 @@ jobs:
 
     steps:
     - name: Checkout Repositorio
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2  # Asegúrate de usar la última versión compatible con Node.js 16
+
+    - name: Configurar Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8  # Puedes ajustar la versión de Python según tus necesidades
 
     - name: Ejecutar Prueba
       run: python hola_mundo.py
