@@ -21,4 +21,4 @@ jobs:
     - name: Ejecutar Prueba
       run: python hola_mundo.py
       env:
-        GITHUB_SECRET_MESSAGE: ${{ secrets.GITHUB_SECRET_MESSAGE }}
+        GITHUB_SECRET_MESSAGE: ${{ secrets.GS_SECRET_MESSAGE }}
