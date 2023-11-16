@@ -19,6 +19,6 @@ jobs:
         python-version: 3.8  # Puedes ajustar la versión de Python según tus necesidades
 
     - name: Ejecutar Prueba
-      run: python hola_mundo.py
+      run: python ConsumirSecretGitHub/consumo_secret.py
       env:
         GS_SECRET_MESSAGE: ${{ secrets.GS_SECRET_MESSAGE }}
