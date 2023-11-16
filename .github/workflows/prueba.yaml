@@ -1,0 +1,19 @@
+name: Prueba de Acción
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repositorio
+      uses: actions/checkout@v2
+
+    - name: Ejecutar Prueba
+      run: python hola_mundo.py
+      env:
+        GITHUB_SECRET_MESSAGE: ${{ secrets.GITHUB_SECRET_MESSAGE }}
